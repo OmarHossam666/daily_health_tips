@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "daily-health-tips-c791e",
+          "appId": "1:913986080473:android:2d810d7f4ebb524014b8c8",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "daily-health-tips-c791e",
+          "configurations": {
+            "android": "1:913986080473:android:2d810d7f4ebb524014b8c8",
+            "ios": "1:913986080473:ios:fbad6638bd7c104314b8c8",
+            "macos": "1:913986080473:ios:fbad6638bd7c104314b8c8",
+            "web": "1:913986080473:web:4209065c3a483a4c14b8c8",
+            "windows": "1:913986080473:web:d949834fb3ea2bb314b8c8"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
